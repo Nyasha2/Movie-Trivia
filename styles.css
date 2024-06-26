@@ -1,0 +1,116 @@
+/**
+ * CS 132
+ * CP2: House of Game style lauyout(CSS layout and Client-side JS)
+ * Author: Nyasha Makaya
+ *
+ * This document contains the styles for the tic tac toe game in the 
+ * house of games
+ */
+
+body, #game-view, #game-view, #game-over, .box, #grid, 
+#options, .level, #head-board, .container-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+body, #game-view, .level, .container-card {
+    flex-direction: column;
+}
+
+nav li, header h1 {
+    display: inline-block;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+body, nav ul, h1 {
+    margin: 0;
+}
+
+button, select, #head-board p {
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.hidden, #game-over.hidden, #main-view.hidden {
+    display: none;
+}
+
+.styled {
+    color : red;
+    background-color: blue;
+}
+
+.container-card {
+    align-items: center;
+    /* We chose to make margin relative to screen width size */
+    margin: 10% 20%;
+    padding:50px;
+    /* This is a flex property that gives spacing between the children;
+       as a flex column, adds some spacing between the options and button */
+    gap: 100px;
+    /* height: fit-content; */
+    /* White, with a bit of opacity */
+    background-color: lightblue;
+    /* Example of a CSS property we chose to keep to show students */
+    /* backdrop-filter: blur(15px); */
+    border-radius: 30px;
+  }
+
+.hidden, #home-page.hidden, #game-play.hidden {
+    display: none;
+  }
+
+#game-view button {
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+#grid {
+    padding: 20px;
+}
+
+#header-heights {
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid goldenrod;
+}
+
+#grid {
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+#game-view, #game-over {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+#head-board {
+    justify-content:space-around
+}

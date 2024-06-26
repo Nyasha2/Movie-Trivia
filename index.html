@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  CP 2: House of Game (CSS Layout and Client-Side JS)
+
+  HTML for the movie trivia
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>House of Game</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="movie_trivia.js"></script>
+</head>
+
+<body> 
+    <section id="home-page" class="container-card">
+        <h1 id="welcome-text"> Welcome to Movie Trivia</h1>
+        <div id="options">
+            <div class="level">
+                <h2>Difficulty:</h2>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="300">Hard</option>
+                  </select>
+            </div>
+            <div class="level">
+                <h2>Time:</h2>
+                <select id="timer">
+                    <option value="30">30 Seconds</option>
+                    <option value="180" selected>3 Minutes</option>
+                    <option value="300">5 Minutes</option>
+                </select>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="start-btn">START</button>
+            <button id="back-btn">HOME</button>
+        </div>
+          
+    </section>
+    <section id="game-play" class="hidden container-card">
+        <section id="head-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Remaining: <span id="timer-display">3:00</span></p>
+        </section>
+        <section id="quiz">
+            <h2>Question</h2>
+            <div id="question"></div>
+        </section>
+        <div class="btns">
+            <button id="back-btn">Quit</button>
+            <button id="next">Check</button>
+        </div>
+    </section>
+    <section  id="game-over" class="hidden"></section>
+</body>
+</html>

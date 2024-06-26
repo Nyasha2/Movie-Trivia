@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  CS 132
+  CP 2: House of Game (CSS Layout and Client-Side JS)
+
+  HTML for the House of Game UI with two views (home and tictactoe)
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <title>House of Game</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="tictactoe.js"></script>
+</head>
+
+<body>
+    <section id="main-view">
+        <header>
+            <div id="header-heights">
+                <h1> House of Game </h1> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="othergames.html">Other Games</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="game-view">
+                <button class="restart">End Game</button>
+                <div id="grid">
+                    <div class="box" data-index="0" id="1"></div>
+                    <div class="box" data-index="1"></div>
+                    <div class="box" data-index="2"></div>
+                    <div class="box" data-index="3"></div>
+                    <div class="box" data-index="4"></div>
+                    <div class="box" data-index="5"></div>
+                    <div class="box" data-index="6"></div>
+                    <div class="box" data-index="7"></div>
+                    <div class="box" data-index="8"></div>
+                  </div>
+            </div>
+        </main>
+    </section>
+    <section  id="game-over" class="hidden">
+        <div>
+            <h2>Game Over</h2>
+            <p id="winner"></p>
+            <button class="restart">New Game</button>
+        </div>
+    </section>
+</body>
+</html>
